@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <!--Menu para la pagina-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Danilo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a> </li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a> </li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a> </li>
+                    <li><a href="#curriculum"onclick="seleccionar()">Curriculum</a> </li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a> </li> 
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+           <div class="contenedor-img">
+            <img src="img/foto.jpg" alt="">
+           </div>
+           <h1>Danilo Menéndez Hernández </h1>
+           <h2>Ingeniero en Sistemas Informaticos</h2>
+           <div class="redes">
+            <a href="https://www.facebook.com/danilo.menendezhernandez.9/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/DMenendezh"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/danilo-men%C3%A9ndez-hern%C3%A1ndez-402249197/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/danilo_menendez/"><i class="fa-brands fa-instagram"></i></a>
+           </div>
+        </div>
+    </section>
+    <!--Seccion Sobre mi-->  
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+          <h2>Sobre Mi</h2>  
+          <p style="text-align: justify;">
+            <span>Hola, soy Danilo Menéndez Hernández, Soy una persona dedicada y perseverante que tiene una profunda pasión por el aprendizaje y el desarrollo de software.
+                 Mi fascinación por este campo no solo radica en la creatividad que permite, sino también en su capacidad para abordar y resolver problemas a través de la tecnología. 
+                 La perseverancia es una de mis principales virtudes. Entiendo que el desarrollo de software a menudo implica enfrentar desafíos y obstáculos, pero estoy dispuesto a
+                  superar cualquier obstáculo que se presente en mi camino. Creo firmemente que cada desafío es una oportunidad para crecer y mejorar mis habilidades.</span>
+        </p>
+        
+          <div class="fila">
+              <!--Datos Personales-->
+              <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Fecha de nacimiento</strong>
+                        18/05/1997
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        0968062168
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        denilo180597@gmail.com
+                    </li>
+                    <li>
+                        <strong>Estado Civil</strong>
+                       Soltero
+                    </li>
+                </ul>
+              </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+      
+    </section>
+
+        <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Ingenieria en Sistemas Informaticos</h4>
+                    <span class="casa">Universidad Tecnica de Manabí</span>
+                    <span class="fecha">2016 - 2021</span>
+                    <p style="text-align: justify;">
+                        <span>Con una sólida base académica y experiencias enriquecedoras, estoy preparado para enfrentar los desafíos profesionales en Sistemas Informaticos.
+                         Mi formación en la Universidad Técnica de Manabí ha sido fundamental para mi desarrollo profesional, y estoy emocionado de aplicar mis habilidades y conocimientos en contextos profesionales.
+                        </span>
+                        </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Segundaria</h4>
+                    <span class="casa">Colegio "Manuel Rivadeneria"</span>
+                    <span class="fecha">2009 - 2015</span>
+                    <p style="text-align: justify;">
+                        <span>Con una sólida base académica y experiencias enriquecedoras en el colegio, estoy preparado para enfrentar nuevos desafíos educativos y personales. Mi formación en el Colegio "Manuel Rivadeneria" 
+                        ha sido esencial para mi desarrollo, y estoy emocionado de llevar las habilidades y lecciones aprendidas a nuevos contextos educativos y personales que se presenten en mi futuro.
+                        </span>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Primaria</h4>
+                    <span class="casa">Escuela "Tiburcio Macías"</span>
+                    <span class="fecha">2002 - 2009</span>
+                    <p style="text-align: justify;">
+                    <span>Con gratitud y orgullo, avanzo hacia nuevas etapas en mi vida educativa y personal. La sólida base que he obtenido en la escuela "Tiburcio Macías" 
+                    me ha preparado de manera integral, y estoy emocionado de aplicar los valores y conocimientos adquiridos en mi futuro.
+                    </span>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Cursos Informaticos</h3>
+                <div class="item der">
+                    <h4>Udemy</h4>
+                    <span class="casa">Python</span>
+                    <span class="fecha">16 horas</span>
+                    <p style="text-align: justify;">
+                        <span> 
+                         El curso de Python en Udemy no solo amplió mis conocimientos en programación, sino también impulsó significativamente mi confianza y preparación para abordar nuevas oportunidades en este campo. Con un sólido dominio de Python adquirido en el curso, estoy emocionado por aplicar estas habilidades en futuros proyectos. 
+                        </span>
+                        </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Cisco Networking Academy</h4>
+                    <span class="casa">Introducción a la cyberseguridad</span>
+                    <span class="fecha">30 horas</span>
+                    <p style="text-align: justify;">
+                        <span>El curso de Introducción a la Ciberseguridad en Cisco Networking Academy, destaco el enriquecimiento significativo de mis conocimientos en el ámbito de la seguridad informática. Este curso no solo ha ampliado mi comprensión de los fundamentos de la ciberseguridad, sino que también ha fortalecido mi capacidad para abordar amenazas y desafíos en el entorno digital.
+                        </span>
+                        </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Socio Empleo</h4>
+                    <span class="casa">Inteligencia Artificial</span>
+                    <span class="fecha">2 horas</span>
+                    <p style="text-align: justify;">
+                        <span> 
+                            Participar en el curso de Inteligencia Artificial con Socio Empleo significó una profunda ampliación de mis conocimientos en este campo innovador. Este programa no solo me proporcionó una comprensión sólida de los fundamentos de la inteligencia artificial, sino que  con herramientas prácticas.
+                        </span>
+                        </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+     <!-- SECCION PORTFOLIO -->
+     <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <!-- Agrega la imagen dentro del modal -->
+            <img id="modal-image" src="" alt="Imágen en modal">
+        </div>
+    </div>
+     <section id="portfolio" class="portfolio">
+            <h2>PORTAFOLIO</h2>
+            <div class="carousel-container" onmouseover="pausarCarrusel()" onmouseout="reanudarCarrusel()" id="detalle-container">
+                <div class="carousel-inner" id="carousel">
+                    <div class="carousel-item">
+                        <img src="img/asignartribunal.png"  alt="asignartribunal">
+                    <div class="overlay"  onclick="mostrarDetalle('img/asignartribunal.png')">
+                        <h3>Asignar tribunal</h3>
+                        <p>En esta interfaz, destinada al rol del Vicedecano, se recibirá la documentación del estudiante. El Vicedecano tendrá la tarea de asignar un tribunal, y a los 
+                            tribunales seleccionados se les enviará un correo electrónico que detallará la fecha, hora y lugar exactos para la calificación. Además, se adjuntará el documento almacenado en la nube para que puedan realizar la respectiva evaluación y calificación directamente a través del sistema.</p>
+                        </div>
+                    </div>
+                <div class="carousel-item" >
+                    <img src="img/index.png"   alt="index">
+                    <div class="overlay" onclick="mostrarDetalle('img/index.png')" >
+                        <h3>Interfaz de inicio</h3>
+                        <p>Esta interfaz presenta la pantalla inicial, donde los tribunales de tesis tienen la libertad de seleccionar la opción que mejor se ajuste a sus necesidades.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/subirdocumentacionestudiante.png"  alt="subirdocumento">
+                    <div class="overlay"  onclick="mostrarDetalle('img/subirdocumentacionestudiante.png')">
+                        <h3>Subir documentación de tesis</h3>
+                        <p>En esta interfaz, el estudiante cargará su documentación y dispondrá de un botón para solicitar el tribunal. Este documento será almacenado en la nube, permitiendo que los tribunales accedan al mismo y realicen la correspondiente evaluación y calificación.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/login.png"  alt="login">
+                    <div class="overlay"  onclick="mostrarDetalle('img/login.png')">
+                        <h3>Login</h3>
+                        <p>En esta interfaz, los usuarios iniciarán sesión y, según su rol, se les presentará la interfaz correspondiente a sus funciones específicas.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item">
+                    <img src="img/calificandoarticulo.png"  alt="calificaciondearticulo">
+                    <div class="overlay" onclick="mostrarDetalle('img/calificandoarticulo.png')">
+                        <h3>Calificando Artículo</h3>
+                        <p>En esta interfaz, los miembros del tribunal tienen la capacidad de calificar artículos científicos. Los estudiantes tienen la opción de elegir entre varios métodos de graduación. En este contexto, la calificación del artículo dependerá del porcentaje asignado según la revista donde haya sido publicado.</p>
+                        </div>
+                </div>
+                <div class="carousel-item"  >
+                    <img src="img/editardocumentacion.png"  alt="editardocumento">
+                    <div class="overlay" onclick="mostrarDetalle('img/editardocumentacion.png')">
+                        <h3>Editar Documentación</h3>
+                        <p>En esta interfaz, los miembros del tribunal tienen la capacidad de modificar la calificación del documento de tesis. Esta opción está disponible siempre y cuando aún no se haya generado el acta de grado correspondiente. Una vez que el acta ha sido generada, el grupo de estudiantes ya no aparecerá en la interfaz para realizar modificaciones en la calificación.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item"   >
+                    <img src="img/generaracta.png"  alt="acta">
+                    <div class="overlay" onclick="mostrarDetalle('img/generaracta.png')" >
+                        <h3>Acta Generada</h3>
+                        <p>En esta interfaz, se genera automáticamente un acta, ya sea grupal o individual, conforme a la estructura predefinida por la universidad. Este documento se crea de manera automática una vez que se han registrado las calificaciones correspondientes.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/generaractaindividual.png"  alt="actaindividual">
+                    <div class="overlay"  onclick="mostrarDetalle('img/generaractaindividual.png')" >
+                        <h3>Acta Individual</h3>
+                        <p>En esta interfaz, el delegado tiene la opción de generar el acta de manera individual. Si se elige la opción individual, la posibilidad de generar un acta grupal desaparece automáticamente. Una vez generada, el acta se guarda automáticamente en la nube, identificándose con las iniciales de la facultad, la carrera y un código único, en este caso, sería la cédula del estudiante.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/generarporcentajeparaarticulo.png"  alt="generarporcentajeparaarticulo" >
+                    <div class="overlay" onclick="mostrarDetalle('img/generarporcentajeparaarticulo.png')">
+                        <h3>Asignar Porcentajes para Artículos Científicos</h3>
+                        <p>En esta interfaz, el Vicedecano tiene la capacidad de asignar la calificación del porcentaje para los estudiantes que elijan la opción de artículo científico. Esta calificación dependerá de la revista en la cual se publique el artículo.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/historialproyectos.png"  alt="proyectoshistorial" >
+                    <div class="overlay" onclick="mostrarDetalle('img/historialproyectos.png')">
+                        <h3>Todos los Proyectos Finalizados</h3>
+                        <p>En esta interfaz, se pueden visualizar todos los estudiantes junto con los temas correspondientes de sus proyectos finalizados.</p>
+                        </div>
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/ingresarasesor.png"  alt="asesor" >
+                    <div class="overlay" onclick="mostrarDetalle('img/ingresarasesor.png')">
+                        <h3>Ingresar Asesor</h3>
+                        <p>En esta interfaz, se tiene la capacidad de asignar un asesor para los estudiantes que elijan la opción de proyectos de tesis.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item">
+                    <img src="img/calificarsustentacion.png"  alt="sustentacion" >
+                    <div class="overlay" onclick="mostrarDetalle('img/calificarsustentacion.png')">
+                        <h3>Calificación de Sustentación de Tesis</h3>
+                        <p>En esta interfaz, una vez que la documentación ha sido calificada, se mostrará una lista de estudiantes para la calificación individual. Estos serán los estudiantes a los que el usuario ha evaluado en la documentación, junto con los parámetros asignados y la calificación máxima correspondiente.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ingresarcriterios.png"  alt="criterios" >
+                    <div class="overlay" onclick="mostrarDetalle('img/ingresarcriterios.png')">
+                        <h3>Ingresar Parámetros de Calificación</h3>
+                        <p>En esta interfaz, es posible ingresar los parámetros de calificación destinados a los tribunales.</p>
+                        </div>
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/solicitartribunal.png"  alt="solicitartribunal" >
+                    <div class="overlay" onclick="mostrarDetalle('img/solicitartribunal.png')">
+                        <h3>Solicitud de Tribunal</h3>
+                        <p>En esta interfaz, para que el estudiante pueda solicitar un tribunal, debe completar la subida de la documentación correspondiente. Para el examen, simplemente debe hacer clic en 'Solicitar Tribunal'.</p>
+                        </div>       
+                </div>
+                <div class="carousel-item">
+                    <img src="img/subirdocumentacionestudiante.png"  alt="subirdocumentacionestudiante" >
+                    <div class="overlay"  onclick="mostrarDetalle('img/subirdocumentacionestudiante.png')">
+                        <h3>Subir Documentación</h3>
+                        <p>En esta interfaz, los estudiantes que opten por la opción de proyecto de tesis podrán cargar su documento correspondiente. Este documento debe ser aprobado por el tutor de tesis antes de su aceptación final.</p>
+                        </div>                        
+                </div>
+                <div class="carousel-item" >
+                    <img src="img/tribunal.png"  alt="tribunal" >
+                    <div class="overlay" onclick="mostrarDetalle('img/tribunal.png')">
+                        <h3>Asignar Tribunal a Todos los Proyectos</h3>
+                        <p>En esta interfaz, el Vicedecano tiene la capacidad de asignar un tribunal a todos los estudiantes. Esta acción marca el inicio del proceso en la interfaz de asignación de tribunales.</p>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/calificarsustentacion.png"  alt="sustentacion" >
+                    <div class="overlay"  onclick="mostrarDetalle('img/calificarsustentacion.png')">
+                        <h3>Calificación de Sustentación de Tesis</h3>
+                        <p>En esta interfaz, una vez que la documentación ha sido calificada, se mostrará una lista de estudiantes para la calificación individual. Estos serán los estudiantes a los que el usuario ha evaluado en la documentación, junto con los parámetros asignados y la calificación máxima correspondiente.</p>
+                        </div>                        
+                </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+<!-- footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/danilo.menendezhernandez.9/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/DMenendezh"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/danilo-men%C3%A9ndez-hern%C3%A1ndez-402249197/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/danilo_menendez/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
