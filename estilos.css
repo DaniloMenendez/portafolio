@@ -476,18 +476,36 @@ html{
     height: 100%;
     margin: auto;
 }
-.portfolio h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 50px 0;
+#portfolio .carousel-container .overlay h3 {
+    margin-bottom: 1.5em;
+    font-size: 2vw; /* Ajusta el tamaño del texto utilizando vw */
+}
+
+#portfolio .carousel-container .overlay p {
+    margin: 10px;
+    font-size: 16px;
+    max-width: 80%; /* O ajusta el porcentaje según tus necesidades */
+    overflow: auto;
+    white-space: normal;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    #portfolio .carousel-container .overlay p {
+        max-width: 90%; /* Ajusta el porcentaje según tus necesidades para dispositivos móviles */
+    }
 }
 .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
 }
-
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 50px 0;
+}
 .carousel-container {
     width: 100%;
     overflow: hidden;
@@ -535,26 +553,28 @@ html{
     opacity: 0;
 }
 
+/* Ajustes generales para la etiqueta <p> y <h3> dentro de .overlay */
+.portfolio .carousel-container .overlay p,
 .portfolio .carousel-container .overlay h3 {
-    margin-bottom: 10px; /* Ajusta el margen según tus necesidades */
-    transition: 1s;
-    font-size: 24px; /* Ajusta el tamaño de la fuente según tus necesidades */
-}
-/* Ajustes para la etiqueta <p> dentro de .overlay */
-.portfolio .carousel-container .overlay p {
     margin: 10px; /* Ajusta el margen según tus necesidades */
-    font-size: 1.2em; /* Tamaño de fuente más pequeño, puedes ajustar según sea necesario */
-    max-width: 100%; /* La etiqueta <p> no será más ancha que el contenedor */
+    max-width: 100%; /* Ambas etiquetas no serán más anchas que el contenedor */
     overflow: auto;
     white-space: normal;
 }
 
 .portfolio .carousel-container .overlay h3 {
     margin-bottom: 10px; /* Ajusta el margen según tus necesidades */
-    font-size: 1.5em; /* Tamaño de fuente más pequeño, puedes ajustar según sea necesario */
-    max-width: 100%; /* La etiqueta <h3> no será más ancha que el contenedor */
-    overflow: auto;
-    white-space: normal;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    .portfolio .carousel-container .overlay p {
+        font-size: 1em; /* Tamaño de fuente más pequeño para <p> en dispositivos móviles */
+    }
+
+    .portfolio .carousel-container .overlay h3 {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño para <h3> en dispositivos móviles */
+    }
 }
 
 .portfolio .carousel-container .overlay:hover {
