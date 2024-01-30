@@ -42,7 +42,7 @@ window.onscroll = function(){
 //boton descargar hoja de vida
 function descargarCV() {
     var link = document.createElement("a");
-    link.href = "https://drive.google.com/uc?export=download&id=1dvRIL5ZUULtrrBN5Yz19_GBlH3ZsdgT7";
+    link.href = "https://drive.google.com/uc?export=download&id=1_-_C68R1hzgZlAhm1rfzWxXB19j2DlIu";
     link.download = "Tu_CV";
     link.click();
 }
